@@ -72,7 +72,7 @@ export default function Home() {
                           попытаться <span className="text-red-500">взломать и вас</span>. <br/>
                           Не время расслабляться! Пользователи регулярно <span className="text-red-500">оставляют новые
                           флаги</span> в сервисах, ваша задача
-                          забрать их "горячими".
+                          забрать их &quot;горячими&quot;.
                       </p>
                       <pre
                           className="w-full text-sm font-mono whitespace-pre-line line py-2 px-3 bg-darkblue bg-opacity-50 rounded-lg shadow border-solid border-[#6D6DDD44] border-[1px] box-border">
