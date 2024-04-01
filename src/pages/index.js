@@ -27,8 +27,8 @@ export default function Home() {
           <main className={`${rubik.className} flex flex-col items-center h-screen select-none`}>
               <NavBar />
               <div className="flex-1 flex flex-col items-center justify-center">
-                  <p className={`font-avant text-11xl font-bold -mb-12 uppercase`}>CENTER CTF</p>
-                  <span className="font-avant uppercase font-bold text-xl">all flags are planted. engage</span>
+                  <p className="font-avant text-6xl md:text-8xl lg:text-9xl xl:text-11xl font-bold uppercase">CENTER CTF</p>
+                  <span className="font-avant uppercase font-bold text-md md:text-lg lg:text-xl">all flags are planted. engage</span>
               </div>
 
               <svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" className="absolute bottom-0">
@@ -40,7 +40,7 @@ export default function Home() {
           <div className={`bg-darkblue bg-opacity-25 p-8 flex flex-col items-center ${rubik.className}`}>
               <span className="font-bold text-xl uppercase">формат</span>
               <span className="font-avant font-bold text-3xl uppercase">ATTACK/DEFENSE</span>
-              <div className="grid grid-cols-2 gap-16 w-full">
+              <div className="grid lg:grid-cols-2 gap-16 w-full">
                   <div className="p-8 flex flex-col ">
                       <p className="font-avant font-bold text-4xl text-blue-700 uppercase">Защищайте</p>
                       <p className="text-lg border-blue-700 border-l-4 pl-4 mb-4">Каждой команде выдаются серверы с
@@ -88,7 +88,7 @@ export default function Home() {
 
               <span className="font-bold text-xl uppercase mt-16">все что нужно знать</span>
               <span className="font-avant font-bold text-3xl uppercase">участие</span>
-              <div className="grid grid-cols-2 gap-16 w-full mt-8">
+              <div className="grid lg:grid-cols-2 gap-16 w-full mt-8">
                   <div
                       className="bg-darkblue bg-opacity-50 rounded-2xl shadow border-solid border-[#6D6DDD44] border-[1px] box-border">
                       <p className="px-4 py-1 block text-xl uppercase font-bold">Место проведения</p>
@@ -108,7 +108,7 @@ export default function Home() {
                           className="bg-darkblue bg-opacity-50 rounded-2xl shadow border-solid border-[#6D6DDD44] border-[1px] box-border flex-1">
                           <p className="px-4 py-1 block text-xl uppercase font-bold">Дата проведения</p>
                           <div className="p-4">
-                              <p className="text-7xl font-bold">28 апреля 2024</p>
+                              <p className="text-4xl lg:text-7xl font-bold">28 апреля 2024</p>
                               <span
                                   className="text-xl font-bold">Через {datediff(new Date(), new Date("2024-04-28"))} дней</span>
                           </div>
@@ -117,10 +117,10 @@ export default function Home() {
                           <Link href="#" legacyBehavior>
                               <div
                                   className="bg-darkblue bg-opacity-50 rounded-2xl shadow border-solid border-[#6D6DDD44] border-[1px]
-                              box-border relative group cursor-pointer">
+                              box-border relative group cursor-pointer aspect-[2/3] lg:aspect-auto">
                                   <FontAwesomeIcon icon={faFile} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                               text-8xl opacity-25 group-hover:rotate-12 group-hover:opacity-50 group-hover:scale-150 transition-all duration-300"/>
-                                  <p className="px-4 py-1 text-xl uppercase font-bold flex items-center justify-between">
+                                  <p className="px-4 py-1 text-md lg:text-xl uppercase font-bold flex items-center justify-between">
                                       Положение
                                       <FontAwesomeIcon icon={faDownload} className="text-sm"/>
                                   </p>
@@ -129,24 +129,24 @@ export default function Home() {
                           <Link href="#" legacyBehavior>
                               <div
                                   className="bg-darkblue bg-opacity-50 rounded-2xl shadow border-solid border-[#6D6DDD44] border-[1px]
-                              box-border relative group cursor-pointer">
+                              box-border relative group cursor-pointer aspect-[2/3] lg:aspect-auto">
                                   <FontAwesomeIcon icon={faFile} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                               text-8xl opacity-25 group-hover:rotate-12 group-hover:opacity-50 group-hover:scale-150 transition-all duration-300"/>
-                                  <p className="px-4 py-1 text-xl uppercase font-bold flex items-center justify-between">
+                                  <p className="px-4 py-1 text-md lg:text-xl uppercase font-bold flex items-center justify-between">
                                       Регламент
                                       <FontAwesomeIcon icon={faDownload} className="text-sm"/>
                                   </p>
                               </div>
                           </Link>
                           <div
-                              className="bg-darkblue bg-opacity-50 rounded-2xl shadow border-solid border-[#6D6DDD44] border-[1px] box-border"></div>
+                              className="bg-darkblue bg-opacity-50 rounded-2xl shadow border-solid border-[#6D6DDD44] border-[1px] box-border aspect-[2/3] lg:aspect-auto"></div>
                       </div>
                   </div>
               </div>
 
               <span className="font-bold text-xl uppercase mt-16">я больше не буду без тз работать</span>
               <span className="font-avant font-bold text-3xl uppercase">споносры</span>
-              <div className="grid grid-cols-4 gap-16 w-full mt-8">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-16 w-full mt-8">
                   <div
                       className="bg-darkblue bg-opacity-50 rounded-2xl shadow border-solid border-[#6D6DDD44] border-[1px]
                               box-border flex flex-col items-center p-4">
